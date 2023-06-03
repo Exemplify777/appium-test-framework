@@ -27,10 +27,13 @@ class AndroidSettings {
      */
     private async fingerPrintWizardEightOrHigher(pin: number) {
         // There is a difference in the order the wizard in Android 10 is executed
-        if (this.platformVersion > 9) {
+        if (this.platformVersion > 11) {
             await this.reEnterPin(pin);
             await this.waitAndTap('MORE');
             await this.waitAndTap('I AGREE');
+        } else if (this.platformVersion > 9) {
+            await this.reEnterPin(pin);
+            await this.waitAndTap('NEXT');
         } else {
             await this.waitAndTap('NEXT');
             await this.reEnterPin(pin);

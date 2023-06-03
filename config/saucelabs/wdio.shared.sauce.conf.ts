@@ -1,4 +1,5 @@
 import { config } from '../wdio.shared.conf';
+import 'dotenv/config';
 
 // ========
 // Services

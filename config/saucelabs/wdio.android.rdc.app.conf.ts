@@ -23,7 +23,7 @@ config.capabilities = [
         // https://wiki.saucelabs.com/display/DOCS/Appium+Capabilities+for+Real+Device+Testing
         // Sauce Labs RDC is not yet W3C compatible, that's why we use ts-ignore
         // @ts-ignore
-        deviceName: 'Samsung Galaxy S[8912].*',
+        deviceName: 'Samsung_Galaxy_S9_free',
         platformName: 'Android',
         automationName: 'UiAutomator2',
         phoneOnly: true,
